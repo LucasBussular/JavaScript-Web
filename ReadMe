@@ -1,0 +1,60 @@
+/* Nesta aula aprenderemos como implementar uma interface interativa em JavaScript dentro de uma página Web. Para isso, usaremos um 
+arquivo HTML já pronto e faremos a implementação dos arquivos de som.
+
+AULA 01 ...........................................................................................................................
+
+onclick="" => atributo usado para determinar uma ação JavaScript ao clicar, escreve-se dentor do aspas
+alert('')  => ação JavaScript. O alerta deve ser escrito dentro das aspas simples e parênteses
+
+arquivo JavaScript externo => assim como o CSS tem um arquivo externo com o estilo do site, o JavaScript também tem um arquivo
+    ("main.js", por convenção) 
+
+querySelector('nomeDoSeletor') => faz uma busca pelo seletor (classe, nome da tag, id etc) e traz um botão do html para dentro do JS
+    Caso seja uma classe: querySelector('.classe') <= com ponto
+    Caso seja um id: querySelector('#nome_do_id')
+
+    "querySelector" precisa de um escopo, um contexto de onde ele deve buscar o elemento. Para isso, usa-se a palavra reservada "document"
+    Então, para procurar dentro do contextodo HTML: document.querySelector('.tecla_pom')
+
+AULA 02 ...........................................................................................................................
+
+A tag <script> pode ser colocada tanto na head quanto body. Caso o funcionamento do JS dependa do que está declarado na tag <body>, 
+ele deve ser colocado antes do fechamento da tag </body>.
+
+Ao atribuir um valor ao atributo ("onclick") a função deve ser passada sem os parênteses, assim, a função não é executada imediatamente, mas no clique
+
+AULA 03 ...........................................................................................................................
+
+Listas de elementos no JavaScript: querySelectorAll => busca todos os elementos com o seletor 
+    no caso: classe "tecla" é um seletor que abrange todos os botões em questão
+
+Referências: devem ser criadas com base no valor que vão receber e guardar
+
+AULA 04 ...........................................................................................................................
+
+Aplicando a função para cada item do array
+
+Funçôes anônimas: podem ser atribuídas dentro de uma variável
+
+classList: retorna a lista de classes de um elemento. Ex:
+
+listaDeTeclas[0].classList  // DOMTokenList(2) 
+                            // 0: "tecla"
+                            // 1: "tecla_pom"
+                             
+                            // retorna um array em que os elementos correspondem às classes atribuídas à ele
+
+
+
+Estrutura de repetição "FOR": (let i = 0; i < max; i++)
+
+AULA 05 ...........................................................................................................................
+
+Eventos do teclado: onkeydown
+                    onkeyup
+                
+
+
+
+
+*/ 
